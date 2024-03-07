@@ -4,7 +4,7 @@ pipeline {
         stage('run script') {
             steps {
                 sh 'chmod +x ./app.py'
-                cat './app.py'
+                sh 'python3 ./app.py'
             }
         }
     }
